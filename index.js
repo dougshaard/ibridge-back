@@ -40,7 +40,7 @@ app.get("/geral/:data/clientes/:idCliente", async (req, res) => {
   });
   res.send(getById);
 });
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 // De inicio vai vir na primeira data, 2022-05-20
 // Depois vai precisar de uma rota para pegar todos os gerais
