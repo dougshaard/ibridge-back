@@ -1,7 +1,7 @@
 module.exports = {
-  username: "douglas",
-  password: "159951147Ds@",
-  database: "ibridge",
-  host: "localhost",
+  username: "bd197333fbd910",
+  password: "18490cbd",
+  database: "heroku_dc9ebc863cea9fc",
+  host: "us-cdbr-east-05.cleardb.net",
   dialect: "mysql",
 };
