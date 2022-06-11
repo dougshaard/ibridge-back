@@ -1,7 +1,9 @@
 const run = async () => {
   const db = require("./app/models");
+  const fetch = require("node-fetch");
+  const newFetch = fetch();
   if ((await db.Geral.findAll()) != 0) return;
-  const res = await fetch("https://www.ibridge.com.br/dados.json");
+  const res = await newFetch("https://www.ibridge.com.br/dados.json");
   const json = await res.json();
   for (let index = 0; index < json.length; index++) {
     const element = json[index].geral;
